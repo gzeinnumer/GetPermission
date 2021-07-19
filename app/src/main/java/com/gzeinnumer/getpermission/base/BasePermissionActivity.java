@@ -1,18 +1,10 @@
-package com.gzeinnumer.getpermission;
+package com.gzeinnumer.getpermission.base;
 
 import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Bundle;
-import android.provider.Settings;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import com.karumi.dexter.BuildConfig;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -26,7 +18,7 @@ import java.util.List;
 
 public class BasePermissionActivity extends AppCompatActivity {
 
-    interface PermissionCallBack{
+    public interface PermissionCallBack {
         void isGranted(boolean isGranted);
     }
 

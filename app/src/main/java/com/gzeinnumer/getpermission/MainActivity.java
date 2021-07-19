@@ -4,6 +4,8 @@ import android.Manifest;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.gzeinnumer.getpermission.base.BasePermissionActivity;
+
 public class MainActivity extends BasePermissionActivity {
 
     @Override
